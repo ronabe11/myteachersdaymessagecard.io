@@ -1,0 +1,133 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("1e88e443fdc7e4ee30701983583c4099.JPG") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  backdrop-filter: brightness(0.9);
+}
+
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 
+
+0.1);
+  padding: 30px;
+  text-align: center;
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s ease;
+}
+
+.card .decor {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #6366f1, #a5b4fc);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.card h1 {
+  color: #4f46e5;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  color: #111827;
+  font-size: 1.4rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #374151;
+  margin: 20px 0;
+}
+
+.card h3 {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+
+#celebrateBtn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: transform 0.2s;
+}
+
+#celebrateBtn:hover {
+  transform: scale(1.05);
+  background: #4f46e5;
+}
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls input,
+.controls textarea {
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-family: "Poppins", sans-serif;
+}
+
+.controls button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: #3730a3;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: gold;
+  animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
